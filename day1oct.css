@@ -1,0 +1,13 @@
+/* TAG SELECTOR */
+/* class selector */
+h1{
+ color: blue !important;
+}
+.hello{
+    color:darkgreen;
+
+}
+.bye{
+    width: 200px;
+    
+}

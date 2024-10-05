@@ -1,0 +1,39 @@
+#p{
+    color: blue;
+    font-size: 40px;
+    border: 10px double blue;
+    color: deeppink;
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(244, 207, 194);
+    font-family:cursive;
+
+
+}
+.p1{
+    color: darkgreen;
+    font-size: 30px;
+    border: 10px dotted rebeccapurple;
+    color: dimgray;
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration:underline;
+}
+#mainid{
+   
+    color: rgb(44, 64, 3);
+    border: 8px solid red;
+    border-radius: 50px;
+    justify-content: center;
+    background-color: yellow;
+}
+.p3{
+    border: 2px solid black;
+    height: 20px;
+    width: 20px;
+
+}

@@ -1,0 +1,34 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav2 {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 20px;
+    align-items: center;
+    background-color:black;
+}
+.nav2 li img{
+    width: 100px;
+    border-radius: 50%;
+}
+.nav2 li ul{
+    display: flex;
+    list-style-type: none;
+    
+    
+}
+.nav2 li ul li a{
+    text-decoration: none;
+    margin: 20px;
+    color:white;
+    
+}
+    
+        
+
+    
+    
+    
