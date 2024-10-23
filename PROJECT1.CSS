@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hide horizontal scrollbar */
+body, html {
+    overflow-x: hidden; /* This hides the horizontal scrollbar */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed; 
+    top: 0;           
+    z-index: 10;      
+    width: 100%;      
+    padding: 2px 0;  
+}
+
+.navbar article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 80px;
+}
+
+.navbar article .earth a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding-left: 60px;
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+.navbar article .right-text {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar article .right-text a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar article .right-text a:hover {
+    color:orange;
+}
+
+/* Video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+}
+
+.video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transform: scale(1.2); 
+    overflow: hidden;      
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 80%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.video-text .headline {
+    font-size: 48px;  
+    font-weight: bold; 
+    margin-bottom: 10px;
+}
+
+.video-text .subtext {
+    font-size: 24px;  
+    line-height: 1.5;
+}
+
+/* Additional text styling */
+.video-text .additional-text {
+    font-size: 18px;  
+    margin: 15px 0;  
+    color: white;      
+}
+
+/* Button styling */
+.explore-button {
+    padding: 10px 20px;  
+    font-size: 16px;      
+    color: white;       
+    background-color: transparent;
+    border: solid white;         
+    border-radius: 5px;   
+    cursor: pointer;      
+    transition: background-color 0.1s; 
+}
+
+.explore-button:hover {
+    background-color: darkorange; 
+    border: none;
+}
+.feature {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: centre;
+    margin-left: 250px;
+
+}
+.image{
+    display: flex;
+    justify-content: center;
+    
+}
+.image  div img{
+    width: 120px;
+    padding: 10px;
+}
+.travel{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: centre;
+       
+    margin-top: 50px;
+    margin-left: 230px;
+}
+
+.pcard article img{
+    width: 300px;
+}
+
+.pcard article{
+    margin: 30px;
+}
+
+.pcard{
+    display: flex;
+    padding: 5px;
+   
+}
+
+
+.pcard article div{
+    overflow: hidden;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.p1 .content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.p1 .image-container {
+    flex: 1; 
+    margin-right: 20px;}
+    
+
+.p1 .image-container img {
+    width: 500px; 
+    padding-left: 90px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    
+    
+    
+    
+}
+
+.p1 .text-container {
+    flex: 2; 
+    text-align: left;
+    max-width: 600px; }
+
+.p1 .text-container h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.p1 .text-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding-right: 100px;
+}
+.button {
+         
+        display: flex;
+        justify-content: center; 
+    }
+    
+    .button button {
+        padding: 5px 10px;  
+        font-size: 14px;    
+        color: black;
+        background-color: white;
+        border: solid 1px black; 
+        border-radius: 25px; 
+        cursor: pointer;      
+        transition: background-color 0.1s; 
+        margin-left: 80px;
+    }
+    
+    .button button:hover {
+        background-color: darkorange; 
+    }
+.bucket {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: centre;
+       
+    margin-top: 50px;
+    margin-left: 230px;
+    
+}
+.p2{
+    color: rgb(104, 103, 103);
+    display: flex;
+    justify-content:center;
+    margin-top: 20px;
+    font-size: larger;
+    
+}
+.pcard article img{
+    width: 300px;
+    
+    
+}
+
+.pcard article{
+    margin: 30px;
+    
+}
+
+.pcard{
+    display: flex;
+    padding: 50px;
+   
+}
+
+
+.pcard article div{
+    overflow: hidden;
+    font-size: large;
+    font-style:bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10px;
+    
+}
+.bucket{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: centre;
+       
+    margin-top: 50px;
+    margin-left: 300px;
+}
+    
+    .p3{
+        color: rgb(104, 103, 103);
+        display: flex;
+        justify-content:center;
+        margin-top: 20px;
+        font-size: larger;
+}
+.destination{
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: centre;
+       
+    margin-top: 50px;
+    margin-left: 230px;
+    
+}
+.button2{
+    display: flex;
+    justify-content: center; 
+}
+
+.button2 button {
+    padding: 20px 20px;  
+    font-size: 14px;    
+    color: black;
+    background-color: white;
+    border: solid 1px black; 
+    box-shadow: 10px 10px 10px  rgba(0, 0, 0, 0.5);
+    cursor: pointer;      
+    transition: background-color 0.1s; 
+}
+
+.button2 button:hover {
+    background-color: darkorange; 
+}

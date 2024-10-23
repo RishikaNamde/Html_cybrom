@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@900;700&display=swap');
+
+*{
+    /* font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+     font-weight: ; 
+    font-style: normal; */
+    /* font-family: "Qwitcher Grypen", cursive; */
+  /* font-weight: 9; */
+  font-style: normal;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;   
+    color: black;
+    font-size: small;
+
+   
+    
+
+}
+
+._4option div{
+    width: 60px;
+    height: 60px;
+    background-color:white;
+    margin:20px; 
+
+    
+}
+._4option{
+    position: fixed;
+    right: 0px;
+    top: 200px;
+}
+#phoneicon{
+    background-color: black;
+    color: yellow;
+    border-radius: 50%;
+    padding: 20px;
+    font-size: 20px;
+    position: fixed;
+    right: 100px;
+    bottom: 100px;
+  
+}
+/* =============================================== */
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(234, 228, 221);
+    
+}
+
+.navbar article{
+    display: flex;
+}
+.navbar article div{
+    margin: 10px;
+}
+
+.navbar article .free::after{
+    content: "Learn More";
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    margin-left:5px;
+    padding: 0px 10px 0px 10px;
+}
+
+/* ================mid navbar======== */
+
+.midnavbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+.midnavbar article{
+    display: flex;
+
+}
+
+.midnavbar article div img{
+    width: 100px;
+}
+
+.midnavbar article div input{
+    background-color: rgb(232, 231, 231);
+    border: none;
+    outline: none;
+}
+
+.midnavbar .mida1{
+    background-color: rgb(232, 231, 231);
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+}
+
+.midnavbar article div a{
+    text-decoration: none;
+    margin: 10px;
+    color: black;
+}
+
+/* ======================bottom navbar============= */
+
+.bottomnavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    /* position: absolute;
+    top: 50px; */
+}
+.bottomnavbar div a{
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+/* ========================hero============== */
+.hero{
+    display: flex;
+    justify-content: center;
+   }
+
+.hero .heroa1{
+    width: 18vw;
+    height: 90vh;
+}
+
+.hero .heroa1 div img{
+    width: 18vw;
+    height: 90vh;
+
+}
+
+.hero .heroa2{
+    width: 28vw;
+    height: 90vh;
+
+}
+
+
+.hero .heroa2 div img{
+    width: 28vw;
+    height: 90vh;
+
+}
+
+.hero .heroa3{
+    height: 70vh;
+}
+
+.hero .heroa3{
+    width: 48vw;
+
+}
+
+
+.hero .heroa3 div img{
+    width: 48vw;
+    
+    
+}
+/* ==============pcard=========== */
+.pcard article img{
+    width: 300px;
+}
+
+.pcard article{
+    margin: 30px;
+}
+
+.pcard{
+    display: flex;
+    padding: 50px;
+    overflow-x: scroll;
+}
+
+.pcard::-webkit-scrollbar {
+    display: none;
+  }
+
+.pcard article div img:hover{
+    scale: 1.2;
+    transition: scale 0.5s;
+}
+
+.pcard article div{
+    overflow: hidden;
+}
+
+/* ===========PCARD========= */
+
+.er article div{
+    background-image: url(https://www.portotheme.com/wordpress/porto/shop49/wp-content/uploads/sites/232/2024/07/shop49-category-1.jpg);
+    width: 300px;
+    height: 300px;
+    
+}
+
+.er article div:hover{
+    scale:1.2;
+    transition: scale 0.5s;
+}
+
+.er article{
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
