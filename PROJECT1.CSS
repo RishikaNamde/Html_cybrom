@@ -20,6 +20,7 @@ body, html {
     z-index: 10;      
     width: 100%;      
     padding: 2px 0;  
+    overflow-x: hidden;
 }
 
 .navbar article {
@@ -115,6 +116,9 @@ body, html {
     background-color: darkorange; 
     border: none;
 }
+
+/* ====================================pcardcss=============== */
+
 .feature {
     font-size: 40px;
     font-weight: bold;
@@ -150,8 +154,10 @@ body, html {
     margin: 30px;
 }
 
-.pcard{
-    display: flex;
+#pcard{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
     padding: 5px;
    
 }
@@ -163,6 +169,21 @@ body, html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     
 }
+
+@media(max-width:1024px){
+    #pcard{
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width:425px){
+    #pcard{
+        display: grid !important;
+        grid-template-columns:  auto;
+    }
+}
+
+/* ========================================================================= */
 .p1 .content {
     display: flex; 
     align-items: center; 
@@ -199,6 +220,30 @@ body, html {
     font-size: 16px;
     line-height: 1.6;
     padding-right: 100px;
+}
+
+@media(max-width:1024px){
+    .p1 .content {
+        display: grid;
+        grid-template-columns: auto; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 20px;
+        
+    }
+
+
+
+    .p1 .image-container img {
+        width: 800px; 
+        padding-left: 0px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+ 
+    }
+    .p1 .text-container {
+         padding-left: 150px;
+        text-align: center;
+        max-width: 800px; }
 }
 .button {
          
