@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blinking Text Example</title>
+  <link rel="stylesheet" href="blinking.css">
+</head>
+<body>
+  <!-- Blinking Text -->
+  <h1 id="blinkingText">Welcome to Our College Website!</h1>
+
+  <script>
+    // JavaScript function to create a blinking effect
+    function blinkText() {
+      const text = document.getElementById("blinkingText");
+
+      // Toggle visibility
+      if (text.style.visibility === "hidden") {
+        text.style.visibility = "visible";
+      } else {
+        text.style.visibility = "hidden";
+      }
+    }
+
+    // Set interval for blinking (e.g., 500 ms)
+    setInterval(blinkText, 500);
+  </script>
+</body>
+</html>

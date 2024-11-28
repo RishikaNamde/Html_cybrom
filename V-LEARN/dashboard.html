@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard - Virtual Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Navbar -->
+<section class="navbar">
+    <article>
+        <div class="lab">
+            <a href="#"><i class="fa-solid fa-chalkboard-user"></i>V-LEARN LABS</a>
+        </div>
+        <div class="right-text">
+            <a href="#">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#">LABS</a>
+            <a href="#">LOGIN</a>
+
+            <!-- Sign Up Dropdown with IDs -->
+            <div class="signup-container" id="signup-container">
+                <a href="#" id="signup-toggle">SIGN UP<i class="fa-solid fa-angle-down"></i></a>
+                <div class="signup-options" id="signup-options">
+                    <a href="#" id="student-option">As Student</a>
+                    <a href="#" id="faculty-option">As Faculty</a>
+                </div>
+            </div>
+        </div>
+    </article>
+</section>
+
+<!-- Teacher Dashboard -->
+<div class="dashboard">
+    <div class="dashboard-section teacher">
+        <h2><i class="fa-solid fa-person-chalkboard"></i> Teacher Dashboard</h2>
+        <div class="card">
+            <i class="icon fa-solid fa-file"></i>
+            <a href="#">Create Assignment</a>
+        </div>
+        <div class="card">
+            <i class="icon fa-solid fa-inbox"></i>
+            <a href="#">View Submissions</a>
+        </div>
+        <div class="card">
+            <i class="icon fa-solid fa-flask"></i>
+            <a href="#">Manage Experiments</a>
+        </div>
+        <div class="card">
+            <i class="icon fa-solid fa-book"></i>
+            <a href="#">Lab Resources</a>
+        </div>
+        <div class="card">
+            <i class="icon fa-solid fa-calendar-alt"></i>
+            <a href="#">Schedule Live Session</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

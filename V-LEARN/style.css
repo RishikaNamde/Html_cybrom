@@ -1,0 +1,209 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #42a5f5, #66bb6a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 80px; /* Space for fixed navbar */
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.navbar article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.navbar .lab a {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .lab a i {
+    margin-right: 10px;
+    color: #ff9800;
+}
+
+.navbar .right-text {
+    display: flex;
+    gap: 60px;
+}
+
+.navbar .right-text a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar .right-text a:hover {
+    color: #ff9800;
+}
+
+.signup-container {
+    position: relative;
+    display: inline-block;
+}
+
+.signup-options {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    border-radius: 6px;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.signup-options a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+.signup-options a:hover {
+    background-color: #444;
+}
+
+.signup-container:hover .signup-options {
+    display: block;
+}
+
+/* Dashboard Styles */
+.dashboard {
+    width: 90%;
+    max-width: 1200px;
+}
+
+.dashboard-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px; /* Add space below fixed navbar */
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.dashboard-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+}
+
+.dashboard-section h2 i {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    color: #000; /* No color change, default black */
+    margin-right: 25px;
+}
+
+.card a {
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.card a:hover {
+    color: #ff9800;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .lab a {
+        margin-bottom: 15px;
+    }
+
+    .navbar .right-text {
+        gap: 20px;
+    }
+
+    .dashboard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dashboard-section {
+        padding: 20px;
+    }
+
+    .card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .card .icon {
+        margin-bottom: 15px;
+    }
+}

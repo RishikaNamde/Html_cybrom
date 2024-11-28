@@ -1,0 +1,15 @@
+/* Optional: Basic styling for blinking text */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+  }
+  
+  #blinkingText {
+    font-size: 2rem;
+    color: goldenrod;
+  }
+  
