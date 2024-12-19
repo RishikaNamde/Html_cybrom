@@ -199,7 +199,8 @@ body, html {
 .p1 .image-container img {
     width: 500px; 
     padding-left: 90px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
+    /* horizontal vertical bulr spread color } */
     
     
     
@@ -209,7 +210,10 @@ body, html {
 .p1 .text-container {
     flex: 2; 
     text-align: left;
-    max-width: 600px; }
+    max-width: 600px;
+ /* text-shadow: 5px 5px 5px gray; */
+
+}
 
 .p1 .text-container h1 {
     font-size: 28px;

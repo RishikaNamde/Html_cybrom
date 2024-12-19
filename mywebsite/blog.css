@@ -1,0 +1,151 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hide horizontal scrollbar */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden; /* Hides only the horizontal scrollbar */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: fixed; 
+    top: 0;           
+    z-index: 10;      
+    width: 100%;      
+    padding: 2px 0;  
+}
+
+.navbar article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px 80px;
+}
+
+.navbar article .earth a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding-left: 60px;
+    margin-right: 100px;
+    text-decoration: none;
+}
+
+.navbar article .right-text {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar article .right-text a {
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar article .right-text a:hover {
+    color: orange;
+}
+
+/* Blog Section */
+#blog {
+    position: relative;
+    height: 100vh; /* Use 100vh for full height */
+    width: 100%; /* Full width */
+    padding-top: 80px; /* Adjust to account for the navbar height */
+}
+
+#blog img {
+    width: 100vw; /* Full width */
+    height: 65vh; /* Full height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    filter: brightness(50%); /* Fade the image */
+}
+
+#blog .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+#blog .overlay h1 {
+    font-size: 3rem; 
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); 
+}
+
+#blog .overlay p {
+    font-size: 1.5rem; 
+    margin-top: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
+}
+
+/* Blog Grid Section */
+#blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 20px; /* Space between grid items */
+    padding: 0 20px 20px; /* Remove top padding to move grid up */
+    background-color: #f8f8f8; /* Light background for the section */
+    margin-top: -50px; /* Move the grid section slightly up */
+}
+
+.grid-item {
+    text-align: center;
+    background-color: white; /* Background for each item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent content overflow */
+    padding: 20px; /* Add padding inside grid items */
+}
+
+.grid-item img {
+    width: 100%; /* Full width */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure the image covers the container */
+    border-bottom: 1px solid #ddd; /* Separator between image and text */
+}
+
+.grid-item h2 {
+    font-size: 1.5rem; /* Heading size */
+    margin: 10px 0;
+    color: #333; /* Dark text color */
+}
+
+.grid-item p {
+    font-size: 1rem; /* Paragraph size */
+    margin: 10px 15px 20px; /* Space around text */
+    color: #666; /* Subtle text color */
+}
+
+/* Read More Button */
+.grid-item .read-more {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color:orange; /* Blue background for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px; /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth color change on hover */
+}
+
+.grid-item .read-more:hover {
+    background-color:lightsalmon; /* Darker blue on hover */
+}
