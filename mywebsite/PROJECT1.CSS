@@ -42,11 +42,11 @@ body, html {
 
 .navbar article .right-text {
     display: flex;
-    gap: 15px;
+    gap: 12px;
 }
 
 .navbar article .right-text a {
-    font-size: 14px;
+    font-size: 13px;
     text-decoration: none;
     color: white;
 }
@@ -80,6 +80,7 @@ body, html {
     text-align: center;
     width: 80%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* text-decoration: none; */
 }
 
 .video-text .headline {
@@ -110,6 +111,7 @@ body, html {
     border-radius: 5px;   
     cursor: pointer;      
     transition: background-color 0.1s; 
+    text-decoration: none;
 }
 
 .explore-button:hover {
