@@ -125,8 +125,8 @@ body, html {
     font-size: 40px;
     font-weight: bold;
     display: flex;
-    justify-content: centre;
-    margin-left: 250px;
+    justify-content: center;
+    /* margin-left: 250px; */
 
 }
 .image{
@@ -142,10 +142,10 @@ body, html {
     font-size: 40px;
     font-weight: bold;
     display: flex;
-    justify-content: centre;
+    justify-content: center;
        
     margin-top: 50px;
-    margin-left: 230px;
+    /* margin-left: 230px; */
 }
 
 .pcard article img{
@@ -276,10 +276,10 @@ body, html {
     font-size: 40px;
     font-weight: bold;
     display: flex;
-    justify-content: centre;
+    justify-content: center;
        
     margin-top: 50px;
-    margin-left: 230px;
+    /* margin-left: 230px; */
     
 }
 .p2{
@@ -320,10 +320,10 @@ body, html {
     font-size: 40px;
     font-weight: bold;
     display: flex;
-    justify-content: centre;
+    justify-content: center;
        
     margin-top: 50px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
     
     .p3{
@@ -337,10 +337,10 @@ body, html {
     font-size: 40px;
     font-weight: bold;
     display: flex;
-    justify-content: centre;
+    justify-content: center;
        
     margin-top: 50px;
-    margin-left: 230px;
+    /* margin-left: 230px; */
     
 }
 .button2{
