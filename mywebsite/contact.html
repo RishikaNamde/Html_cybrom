@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./contact.css">
 </head>
@@ -12,87 +12,43 @@
     <section class="navbar">
         <article>
             <div class="earth"><a href="#"><i class="fa-solid fa-earth-americas"></i> THE WORLD TRAVEL GUY</a></div>
+            
+            <!-- Hamburger Menu Checkbox -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+
             <div class="right-text">
                 <a href="./index.html">HOME</a>
                 <a href="./index2.html">BLOG</a>
                 <div class="dropdown">
                     <a href="#">DESTINATION <i class="fa-solid fa-chevron-down"></i></a>
                     <ul class="dropdown-menu">
-                        <li class="submenu">
-                            <a href="#"><i class="fa-solid fa-earth-americas"></i>  America <i class="fa-solid fa-arrow-right"></i></a>
-                            <ul class="submenu-list">
-                                <li><a href="#">Central America</a></li>
-                                <li><a href="#">South America</a></li>
-                                <li><a href="#">North America</a></li>
-                            </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i> Africa <i class="fa-solid fa-arrow-right"></i></a>
-                                <ul class="submenu-list">
-                                    <li><a href="#">Egypt</a></li>
-                                    <li><a href="#">Morocco</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i> Europe <i class="fa-solid fa-arrow-right"></i></a>
-                                <ul class="submenu-list">
-                                    <li><a href="#">Greece</a></li>
-                                    <li><a href="#">Island</a></li>
-                                    <li><a href="#">Spain</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i> Asia <i class="fa-solid fa-arrow-right"></i></a>
-                                <ul class="submenu-list">
-                                    <li><a href="#">East Asia</a></li>
-                                    <li><a href="#">South Asia</a></li>
-                                    <li><a href="#">SouthEast Asia</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i>Middle East  <i class="fa-solid fa-arrow-right"></i></a>
-                                <ul class="submenu-list">
-                                    <li><a href="#">Egypt</a></li>
-                                    <li><a href="#">Jordan</a></li>  
-                                    <li><a href="#">Lebanon</a></li>   
-                                    <li><a href="#"> Oman</a></li>   
-                                    <li><a href="#"> Qatar</a></li>   
-                                    <li><a href="#">Turkey</a></li>   
-                                    <li><a href="#">United Arab Emirates</a></li>   
-                                   
-                                </ul>
-                            </li>
-                            
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                    </ul>
                 </div>
-                
-<div class="dropdown">
-  <a href="#">CATEGORIES <i class="fa-solid fa-chevron-down"></i></a>
-  <ul class="dropdown-menu">
-      <li><a href="#">Beaches</a></li>
-      <li><a href="#">Bucket List</a></li>
-      <li><a href="#">Hikes</a></li>
-      <li><a href="#">Itineraries</a></li>
-      <li><a href="#">Monuments</a></li>
-      <li><a href="#">UNESCO</a></li>
-      <li><a href="#">Volcanoes</a></li>
-      <li><a href="#">Waterfalls</a></li>
-      <li><a href="#">Wildlife</a></li>
-  </ul>
-</div>
-
-<div class="dropdown">
-    <a href="#">Gallery<i class="fa-solid fa-chevron-down"></i></a>
-    <ul class="dropdown-menu">
-        <li><a href="#">Image gallery</a></li>
-        <li><a href="#">My Camera Gear</a></li>
-                
-            </div>
-            <a href="#">ABOUT</a>
+                <div class="dropdown">
+                    <a href="#">CATEGORIES <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Beaches</a></li>
+                        <li><a href="#">Bucket List</a></li>
+                        <li><a href="#">Hikes</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a href="#">GALLERY<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Image gallery</a></li>
+                        <li><a href="#">My Camera Gear</a></li>
+                    </ul>
+                </div>
+                <a href="#">ABOUT</a>
                 <a href="#">CONTACT</a>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
-            
+            </div>
         </article>
-        
     </section>
 
     <!-- Blog Section -->
@@ -105,43 +61,39 @@
             </div>
         </div>
     </section>
+
+    <!-- Contact Section -->
     <section>
         <div class="touch">
             <h3>GET IN TOUCH</h3>
         </div>
-        <div class="contactform ">
+        <div class="contactform">
             <h3>⸻⸻ CONTACT FORM ⸻⸻</h3>
         </div>
         <div class="line">
             <h3>Send me your questions, comments, or suggestions!</h3>
         </div>
         <div class="lines">
-            <h3>If you'd like to work with me or you have a question or comment,</h3>
-                <h3>you can contact me using the form below. </h3>
-                <h3>You can also find more info about me here. </h3>
+            <h3>If you'd like to work with me or you have a question or comment, you can contact me using the form below. You can also find more info about me here.</h3>
         </div>
     </section>
-    <!-- IMAGE -->
+
+    <!-- Contact Form -->
     <section class="image">
         <img src="https://img.freepik.com/premium-vector/abstract-minimal-scene-with-geometric-forms-white-podium-white-background-product-presentation-vector_350503-1907.jpg" alt="Contact Form Background">
         <div class="form-container">
             <form action="#" method="POST">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name" required>
-                
                 <label for="email">Email Address</label>
                 <input type="email" id="email" name="email" placeholder="Enter your email" required>
-                
                 <label for="subject">Subject</label>
                 <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
-                
                 <label for="message">Your Message</label>
                 <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
-                
                 <button type="submit">Send Message</button>
             </form>
         </div>
     </section>
-    
 </body>
 </html>

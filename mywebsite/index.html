@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Your Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./PROJECT1.CSS">
 </head>
@@ -12,18 +12,45 @@
     <section class="navbar">
         <article>
             <div class="earth"><a href="#"><i class="fa-solid fa-earth-americas"></i> THE WORLD TRAVEL GUY</a></div>
+            
+            <!-- Hamburger Menu Checkbox -->
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><i class="fa-solid fa-bars"></i></label>
+
             <div class="right-text">
-                <a href="/mywebsite/Project_1.html">HOME</a>
+                <a href="./index.html">HOME</a>
                 <a href="./index2.html">BLOG</a>
-                <a href="#"> DESTINATION <i class="fa-solid fa-chevron-down"></i></a>
-                <a href="#">CATEGORIES<i class="fa-solid fa-chevron-down"></i></a>
-                <a href="#">GALLERY<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="dropdown">
+                    <a href="#">DESTINATION <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Africa</a></li>
+                        <li><a href="#">Europe</a></li>
+                        <li><a href="#">Asia</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a href="#">CATEGORIES <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Beaches</a></li>
+                        <li><a href="#">Bucket List</a></li>
+                        <li><a href="#">Hikes</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <a href="#">GALLERY<i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Image gallery</a></li>
+                        <li><a href="#">My Camera Gear</a></li>
+                    </ul>
+                </div>
                 <a href="#">ABOUT</a>
-                <a href="./contact.css">CONTACT</a>
+                <a href="#">CONTACT</a>
                 <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
             </div>
         </article>
     </section>
+
 
     <!-- Video container with text overlay -->
     <div class="video-container">

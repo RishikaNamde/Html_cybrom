@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -58,6 +57,125 @@ body, html {
     color: orange;
 }
 
+/* Hamburger Icon */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 24px;
+    color: white;
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .dropdown-menu li {
+    position: relative;
+}
+
+.navbar .dropdown-menu a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: black;
+}
+
+/* Show dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Submenu styling */
+.navbar .submenu-list {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .submenu-list a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .submenu-list a:hover {
+    background-color: black;
+}
+
+/* Show submenu on hover */
+.navbar .dropdown-menu li:hover .submenu-list {
+    display: block;
+}
+
+/* Responsive Navbar (Mobile) */
+@media (max-width: 768px) {
+    .navbar article .right-text {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 20px;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    .navbar article .right-text a {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger i {
+        font-size: 30px;
+    }
+
+    /* Toggle visibility with checkbox */
+    .menu-toggle:checked + .hamburger + .right-text {
+        display: flex;
+    }
+
+    .navbar .dropdown-menu {
+        position: relative;
+    }
+}
+
 /* Blog Section */
 #blog {
     position: relative;
@@ -94,140 +212,50 @@ body, html {
     margin-top: 10px;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
 }
-/* Dropdown menu styling */
-/* Dropdown styling */
-.navbar .dropdown {
-    position: relative;
-    display: inline-block;
-}
 
-.navbar .dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar .dropdown-menu li {
-    position: relative;
-}
-
-.navbar .dropdown-menu a {
-    color: black;
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-}
-
-.navbar .dropdown-menu a:hover {
-    background-color:black;
-}
-
-/* Show dropdown on hover */
-.navbar .dropdown:hover .dropdown-menu {
-    display: block;
-}
-
-/* Submenu styling */
-.navbar .submenu-list {
-    display: none;
-    position: absolute;
-    left: 100%;
-    top: 0;
-    background-color: black;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.navbar .submenu-list a {
-    padding: 8px 12px;
-    text-decoration: none;
-    display: block;
-}
-
-.navbar .submenu-list a:hover {
-    background-color:black;
-}
-
-/* Show submenu on hover */
-.navbar .dropdown-menu li:hover .submenu-list {
-    display: block;
-}
-/* Hover effect for dropdown */
-.navbar .dropdown:hover .dropdown-menu {
-    display: block;
-  }
-  
-  /* Dropdown menu styles */
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-  }
-  
-  .dropdown-menu li a {
-    padding: 12px 16px;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .dropdown-menu li a:hover {
-    background-color: #555;
-  }
-  .touch{
+/* Form Section */
+.touch{
     color: rgb(242, 114, 89);
     text-align: center;
     font-size: 25px;
-    
-  }
-  .contactform {
+}
+
+.contactform {
     text-align: center;
     color: #444;
-    /* font-style: bold; */
-    padding:20px ;  
-  }
-  .line h3{
+    padding: 20px;
+}
+
+.line h3{
     text-align: center;
     color: rgb(82, 79, 79);
     font-style: italic; 
-  }
-  .lines h3{
+}
+
+.lines h3{
     text-align: center;
     color: rgb(82, 79, 79);
     font-style: italic;
     padding: 3px;
+}
 
-  }
-  .image {
+.image {
     position: relative;
     width: 100%;
     height: 100vh; 
-  }
-  
-  .image img {
+}
+
+.image img {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    /* width: 100%; */
     height: auto;
     object-fit: cover; 
-  }
-  
-  .form-container {
+}
+
+.form-container {
     background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
     padding: 20px;
     width: 50%; 
@@ -237,34 +265,37 @@ body, html {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  form {
+}
+
+form {
     display: flex;
     flex-direction: column;
-  }
-  
-  form input,
-  form textarea {
+}
+
+form input,
+form textarea {
     margin-bottom: 10px;
     padding: 10px;
     font-size: 16px;
-  }
-  
-  form button {
+}
+
+form button {
     padding: 10px;
-    background-color:rgb(242, 114, 89);
+    background-color: rgb(242, 114, 89);
     color: white;
     border: none;
     cursor: pointer;
-  }
-  
-  form button:hover {
+}
+
+form button:hover {
     background-color: rgb(69, 194, 69);
-  }
-  @media (max-width:450px)
-  {
-    #tophead div span{
+}
+
+@media (max-width: 450px) {
+    .navbar article .right-text a {
+        font-size: 12px;
+    }
+    #tophead div span {
         display: none;
     }
-  }
+}

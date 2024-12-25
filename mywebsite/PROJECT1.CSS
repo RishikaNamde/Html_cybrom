@@ -20,7 +20,7 @@ body, html {
     z-index: 10;      
     width: 100%;      
     padding: 2px 0;  
-    overflow-x: hidden;
+    /* overflow-y: hidden; */
 }
 
 .navbar article {
@@ -126,7 +126,7 @@ body, html {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    /* margin-left: 250px; */
+    /* margin-right: 200px; */
 
 }
 .image{
@@ -172,18 +172,7 @@ body, html {
     
 }
 
-@media(max-width:1024px){
-    #pcard{
-        display: grid !important;
-        grid-template-columns: auto auto;
-    }
-}
-@media(max-width:425px){
-    #pcard{
-        display: grid !important;
-        grid-template-columns:  auto;
-    }
-}
+
 
 /* ========================================================================= */
 .p1 .content {
@@ -228,7 +217,7 @@ body, html {
     padding-right: 100px;
 }
 
-@media(max-width:1024px){
+@media (min-width:426px) and (max-width:1024px){
     .p1 .content {
         display: grid;
         grid-template-columns: auto; 
@@ -483,14 +472,179 @@ footer {
   .icons a{
     color: grey;
    padding: 20px;
-  
- 
-    
-    
+  }
+  #check{
+    color: white;
+    display: none;
+  }
+  /* @media (min-width:426px)and(max-width:1024px){
+    #pcard{
+        display: grid !important;
+        grid-template-columns: auto auto;
+    }
+}
+@media(max-width:425px){
+    #pcard{
+        display: grid !important;
+        grid-template-columns:  auto;
+    }
+    .navbar article .right-text 
+{
+    display: none;
+}
+
+#check:checked~.navbar article .right-text {
+    display: block;
+    position: absolute;
+    z-index: 999;
+    top: 80%;
+    left: 15%;
+    width: 50%;
+    height: 200px;
+    overflow: visible !important;
+    font-size: 20px;
     
 
-  }
-  
+}
+
+.navbar article .earth a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    padding-left: 0px;
+    margin-right: 0px;
+    text-decoration: none;
+}
+
+#bars{
+    color: white;
+    position: absolute;
+    z-index: 999;
+    top: 5%;
+    right: 5%;
+    font-size: 0px;
+}
+
+} */
+/* Hamburger Icon */
+.menu-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hamburger i {
+    font-size: 24px;
+    color: white;
+}
+
+/* Dropdown menu styling */
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .dropdown-menu li {
+    position: relative;
+}
+
+.navbar .dropdown-menu a {
+    color: black;
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: black;
+}
+
+/* Show dropdown on hover */
+.navbar .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Submenu styling */
+.navbar .submenu-list {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar .submenu-list a {
+    padding: 8px 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.navbar .submenu-list a:hover {
+    background-color: black;
+}
+
+/* Show submenu on hover */
+.navbar .dropdown-menu li:hover .submenu-list {
+    display: block;
+}
+
+/* Responsive Navbar (Mobile) */
+@media  (max-width: 768px) {
+    .navbar article .right-text {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 20px;
+        width: 200px;
+        border-radius: 8px;
+    }
+
+    .navbar article .right-text a {
+        font-size: 16px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger i {
+        font-size: 30px;
+    }
+
+    /* Toggle visibility with checkbox */
+    .menu-toggle:checked + .hamburger + .right-text {
+        display: flex;
+    }
+
+    .navbar .dropdown-menu {
+        position: relative;
+    }
+}
+
 
 
 
