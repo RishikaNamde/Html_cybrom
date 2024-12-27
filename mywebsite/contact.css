@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Hide horizontal scrollbar */
+
 body, html {
     margin: 0;
     padding: 0;
@@ -57,7 +57,7 @@ body, html {
     color: orange;
 }
 
-/* Hamburger Icon */
+
 .menu-toggle {
     display: none;
 }
@@ -72,7 +72,7 @@ body, html {
     color: white;
 }
 
-/* Dropdown menu styling */
+
 .navbar .dropdown {
     position: relative;
     display: inline-block;
@@ -105,12 +105,12 @@ body, html {
     background-color: black;
 }
 
-/* Show dropdown on hover */
+
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/* Submenu styling */
+
 .navbar .submenu-list {
     display: none;
     position: absolute;
@@ -134,12 +134,12 @@ body, html {
     background-color: black;
 }
 
-/* Show submenu on hover */
+
 .navbar .dropdown-menu li:hover .submenu-list {
     display: block;
 }
 
-/* Responsive Navbar (Mobile) */
+
 @media (max-width: 768px) {
     .navbar article .right-text {
         display: none;
@@ -166,7 +166,7 @@ body, html {
         font-size: 30px;
     }
 
-    /* Toggle visibility with checkbox */
+    
     .menu-toggle:checked + .hamburger + .right-text {
         display: flex;
     }
@@ -176,7 +176,7 @@ body, html {
     }
 }
 
-/* Blog Section */
+
 #blog {
     position: relative;
     height: 100vh; 
@@ -188,7 +188,7 @@ body, html {
     width: 100vw; 
     height: 75vh; 
     object-fit: cover; 
-    filter: brightness(80%); /* Fade the image */
+    filter: brightness(80%); 
 }
 
 #blog .overlay {
@@ -256,7 +256,7 @@ body, html {
 }
 
 .form-container {
-    background-color: rgba(255, 255, 255, 0.7); /* Transparent white background */
+    background-color: rgba(255, 255, 255, 0.7); 
     padding: 20px;
     width: 50%; 
     margin: 0 auto; 

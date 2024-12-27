@@ -1,19 +1,19 @@
-/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Hide horizontal scrollbar */
+
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow-x: hidden; /* Hides only the horizontal scrollbar */
+    overflow-x: hidden;
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -58,19 +58,19 @@ body, html {
     color: orange;
 }
 
-/* Blog Section */
+
 #blog {
     position: relative;
-    height: 100vh; /* Use 100vh for full height */
-    width: 100%; /* Full width */
-    padding-top: 80px; /* Adjust to account for the navbar height */
+    height: 100vh; 
+    width: 100%;
+    padding-top: 80px; 
 }
 
 #blog img {
-    width: 100vw; /* Full width */
-    height: 65vh; /* Full height */
-    object-fit: cover; /* Ensure the image covers the container without distortion */
-    filter: brightness(50%); /* Fade the image */
+    width: 100vw; 
+    height: 65vh; 
+    object-fit: cover; 
+    filter: brightness(50%);
 }
 
 #blog .overlay {
@@ -95,59 +95,59 @@ body, html {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5); 
 }
 
-/* Blog Grid Section */
+
 #blog-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    gap: 20px; /* Space between grid items */
-    padding: 0 20px 20px; /* Remove top padding to move grid up */
-    background-color: #f8f8f8; /* Light background for the section */
-    margin-top: -50px; /* Move the grid section slightly up */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 0 20px 20px; 
+    background-color: #f8f8f8; 
+    margin-top: -50px; 
 }
 
 .grid-item {
     text-align: center;
-    background-color: white; /* Background for each item */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    overflow: hidden; /* Prevent content overflow */
-    padding: 20px; /* Add padding inside grid items */
+    background-color: white; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    padding: 20px;
 }
 
 .grid-item img {
-    width: 100%; /* Full width */
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Ensure the image covers the container */
-    border-bottom: 1px solid #ddd; /* Separator between image and text */
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd; 
 }
 
 .grid-item h2 {
-    font-size: 1.5rem; /* Heading size */
+    font-size: 1.5rem; 
     margin: 10px 0;
-    color: #333; /* Dark text color */
+    color: #333; 
 }
 
 .grid-item p {
-    font-size: 1rem; /* Paragraph size */
-    margin: 10px 15px 20px; /* Space around text */
-    color: #666; /* Subtle text color */
+    font-size: 1rem; 
+    margin: 10px 15px 20px;
+    color: #666; 
 }
 
 /* Read More Button */
 .grid-item .read-more {
     font-size: 1rem;
     padding: 10px 20px;
-    background-color:orange; /* Blue background for the button */
+    background-color:orange; 
     color: white;
     text-decoration: none;
     border-radius: 4px;
     display: inline-block;
-    margin-top: 10px; /* Space above the button */
-    transition: background-color 0.3s ease; /* Smooth color change on hover */
+    margin-top: 10px; 
+    transition: background-color 0.3s ease;
 }
 
 .grid-item .read-more:hover {
-    background-color:lightsalmon; /* Darker blue on hover */
+    background-color:lightsalmon; 
 }
 .get {
     position: relative;
@@ -268,7 +268,7 @@ footer {
     color: grey;
    padding: 20px;
   }
-  /* Dropdown menu styling */
+  
 /* Dropdown styling */
 .navbar .dropdown {
     position: relative;
@@ -302,7 +302,6 @@ footer {
     background-color:black;
 }
 
-/* Show dropdown on hover */
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -331,11 +330,11 @@ footer {
     background-color:black;
 }
 
-/* Show submenu on hover */
+
 .navbar .dropdown-menu li:hover .submenu-list {
     display: block;
 }
-/* Hover effect for dropdown */
+
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
   }
@@ -408,7 +407,7 @@ footer {
     background-color: black;
 }
 
-/* Show dropdown on hover */
+
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
@@ -437,12 +436,12 @@ footer {
     background-color: black;
 }
 
-/* Show submenu on hover */
+
 .navbar .dropdown-menu li:hover .submenu-list {
     display: block;
 }
 
-/* Responsive Navbar (Mobile) */
+/* Responsive */
 @media (max-width: 768px) {
     .navbar article .right-text {
         display: none;
@@ -469,7 +468,7 @@ footer {
         font-size: 30px;
     }
 
-    /* Toggle visibility with checkbox */
+   
     .menu-toggle:checked + .hamburger + .right-text {
         display: flex;
     }

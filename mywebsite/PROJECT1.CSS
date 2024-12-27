@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-/* Hide horizontal scrollbar */
+
 body, html {
-    overflow-x: hidden; /* This hides the horizontal scrollbar */
+    overflow-x: hidden; 
 }
 
-/* Navbar */
+
 .navbar {
     display: flex;
     justify-content: center;
@@ -55,7 +55,7 @@ body, html {
     color:orange;
 }
 
-/* Video container */
+
 .video-container {
     position: relative;
     width: 100%;
@@ -94,14 +94,14 @@ body, html {
     line-height: 1.5;
 }
 
-/* Additional text styling */
+
 .video-text .additional-text {
     font-size: 18px;  
     margin: 15px 0;  
     color: white;      
 }
 
-/* Button styling */
+
 .explore-button {
     padding: 10px 20px;  
     font-size: 16px;      
@@ -191,7 +191,7 @@ body, html {
     width: 500px; 
     padding-left: 90px;
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.5);
-    /* horizontal vertical bulr spread color } */
+    
     
     
     
@@ -526,7 +526,7 @@ footer {
 }
 
 } */
-/* Hamburger Icon */
+
 .menu-toggle {
     display: none;
 }
@@ -541,7 +541,6 @@ footer {
     color: white;
 }
 
-/* Dropdown menu styling */
 .navbar .dropdown {
     position: relative;
     display: inline-block;
@@ -574,12 +573,12 @@ footer {
     background-color: black;
 }
 
-/* Show dropdown on hover */
+
 .navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-/* Submenu styling */
+
 .navbar .submenu-list {
     display: none;
     position: absolute;
@@ -603,12 +602,12 @@ footer {
     background-color: black;
 }
 
-/* Show submenu on hover */
+
 .navbar .dropdown-menu li:hover .submenu-list {
     display: block;
 }
 
-/* Responsive Navbar (Mobile) */
+/* Responsive  */
 @media  (max-width: 768px) {
     .navbar article .right-text {
         display: none;
@@ -635,7 +634,7 @@ footer {
         font-size: 30px;
     }
 
-    /* Toggle visibility with checkbox */
+    
     .menu-toggle:checked + .hamburger + .right-text {
         display: flex;
     }
