@@ -1,5 +1,3 @@
-/* bata.css */
-
 /* Body Styling */
 body {
     margin: 0;
@@ -16,7 +14,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     height: 50px;
     width: 100%;
-    position:fixed;
+    position: fixed;
 }
 
 /* Navbar Left Links */
@@ -64,7 +62,6 @@ body {
     font-size: 16px;
     color: #888;
     pointer-events: none; 
-    
 }
 
 /* Icon Styling */
@@ -98,21 +95,24 @@ body {
     object-fit: cover; 
     height: 100%;
 }
+
 .image2-container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 0;
     padding-top: 20px;
 }
+
 .grid2{
     width: 100%;
     height: auto;
     object-fit: cover; 
     height: 100%;
 }
+
 /* Product Section Styling */
 .product-section {
-    padding:  20px;
+    padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
 }
@@ -127,9 +127,7 @@ body {
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* gap: 20px; */
     margin: 0 auto;
-    /* max-width: 1200px; */
 }
 
 /* Product Card */
@@ -168,12 +166,12 @@ body {
 
 .product-price {
     font-size: 1em;
-    color:white;
+    color: white;
     margin-bottom: 15px;
 }
 
 .hover-grid-section {
-    padding:  20px;
+    padding: 20px;
     text-align: center;
     background-color: #f9f9f9;
 }
@@ -182,7 +180,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
@@ -212,10 +209,10 @@ body {
     color: white;
     font-size: 40px;
     font-weight: bold;
-    /* padding: 10px 20px; */
     border-radius: 4px;
     text-align: center;
 }
+
 /* Four Grid Section */
 .four-grid-section {
     padding: 50px 20px;
@@ -227,14 +224,13 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
-    /* max-width: 1200px; */
     margin: 0 auto;
 }
 
 .four-grid-item {
     position: relative;
     overflow: hidden;
-    border: none; /* No border curves */
+    border: none;
 }
 
 .four-grid-image {
@@ -244,7 +240,6 @@ body {
     transition: filter 0.3s ease, transform 0.3s ease;
 }
 
-/* Overlay Text */
 .grid-text {
     position: absolute;
     bottom: 10%;
@@ -257,23 +252,19 @@ body {
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
-    white-space: nowrap;
 }
 
-/* Hover Effect: Darken Image */
 .four-grid-item:hover .four-grid-image {
     filter: brightness(0.7);
     transform: scale(1.05);
 }
-body {
-    font-family: Arial, sans-serif;
-}
 
+/* Footer Styling */
 .footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-    background-color:white;
+    background-color: white;
 }
 
 .footer-left {
@@ -312,7 +303,7 @@ body {
 }
 
 .column a {
-    color:black;
+    color: black;
     text-decoration: none;
     margin-bottom: 5px;
 }
@@ -343,4 +334,101 @@ body {
 
 .footer-bottom hr {
     margin-bottom: 10px;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .navbar-left,
+    .navbar-right {
+        margin-top: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-center .logo-image {
+        width: 80px;
+        height: 50px;
+    }
+
+    .image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left {
+        text-align: center;
+    }
+
+    .footer-right {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        font-size: 14px;
+    }
+}
+
+/* Media Queries */
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-left .nav-item {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .search-bar {
+        padding: 5px 15px;
+    }
+
+    .icon {
+        font-size: 14px;
+        margin-left: 5px;
+    }
+
+    .image-container {
+        grid-template-columns: 1fr;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product-card {
+        margin-bottom: 10px;
+    }
+
+    .four-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 20px;
+    }
 }
