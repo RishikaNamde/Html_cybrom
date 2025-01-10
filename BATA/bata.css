@@ -56,7 +56,7 @@ body {
     font-size: 16px;
 }
 
-.search-icon {
+.search-icon a {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -97,4 +97,250 @@ body {
     height: auto;
     object-fit: cover; 
     height: 100%;
+}
+.image2-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 0;
+    padding-top: 20px;
+}
+.grid2{
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+    height: 100%;
+}
+/* Product Section Styling */
+.product-section {
+    padding:  20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.product-section h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 20px; */
+    margin: 0 auto;
+    /* max-width: 1200px; */
+}
+
+/* Product Card */
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    transform: scale(1.1);
+}
+
+/* Product Title and Price */
+.product-title {
+    font-size: 1.2em;
+    margin: 15px 0 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1em;
+    color:white;
+    margin-bottom: 15px;
+}
+
+.hover-grid-section {
+    padding:  20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.hover-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.hover-grid-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.hover-grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.hover-grid-item:hover .hover-grid-image {
+    transform: scale(1.1);
+}
+
+.grid-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    /* padding: 10px 20px; */
+    border-radius: 4px;
+    text-align: center;
+}
+/* Four Grid Section */
+.four-grid-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.four-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.four-grid-item {
+    position: relative;
+    overflow: hidden;
+    border: none; /* No border curves */
+}
+
+.four-grid-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* Overlay Text */
+.grid-text {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/* Hover Effect: Darken Image */
+.four-grid-item:hover .four-grid-image {
+    filter: brightness(0.7);
+    transform: scale(1.05);
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    background-color:white;
+}
+
+.footer-left {
+    color: red;
+}
+
+.footer-left h4 {
+    font-size: 24px;
+}
+
+.footer-left p {
+    color: black;
+    font-size: 12px;
+}
+
+.button {
+    background-color: red;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.footer-right {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: grey;
+}
+
+.column a {
+    color:black;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.column a:hover {
+    color: red;
+}
+
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.social-media a {
+    width: 50px;
+    height: 50px;
+    color: black;
+    font-size: 25px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+    padding-top: 20px;
+}
+
+.footer-bottom hr {
+    margin-bottom: 10px;
 }
